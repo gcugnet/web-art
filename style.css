@@ -7,6 +7,14 @@ body {
     margin: 0px;
 }
 
+.filter {
+    background-color: rgba(100, 100, 100, 0.3);
+    position: absolute;
+    width: 50em;
+    height: 34.2em;
+    z-index: 1;
+}
+
 img {
     width: 50em;
     z-index: -1;
