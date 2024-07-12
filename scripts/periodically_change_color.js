@@ -67,7 +67,8 @@ function changeColor() {
  * @param {number} interval - The interval to change the color.
  */
 function changeColorByInterval(interval) {
-  document.addEventListener("DOMContentLoaded", () => {
+  buttonElement.addEventListener("click", () => {
+    buttonElement.style.display = "none";
     setInterval(() => {
       changeColor();
     }, interval);
@@ -78,5 +79,4 @@ function changeColorByInterval(interval) {
 //                              Apply functions                               //
 // -------------------------------------------------------------------------- //
 
-// Uncomment to use the function.
-// changeColorByInterval(1);
+changeColorByInterval(1);

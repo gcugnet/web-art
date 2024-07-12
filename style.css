@@ -1,6 +1,7 @@
 body {
     background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -18,4 +19,15 @@ body {
 img {
     width: 50em;
     z-index: -1;
+}
+
+button {
+    margin: 2em;
+    width: 10em;
+    height: 2em;
+    background-color: rgba(200, 200, 200, 1);
+}
+
+button:hover {
+    background-color: rgba(180, 180, 180, 1);
 }
