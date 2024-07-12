@@ -1,0 +1,16 @@
+# ---------------------------------------------------------------------------- #
+#          Ignore repositories and files to keep clean diffs with git          #
+# ---------------------------------------------------------------------------- #
+
+# direnv cache for Nix shells
+/.direnv/
+
+# Editor artifacts
+/.history/
+
+# gitignore files
+/storage/app/*
+/storage/framework/*
+
+# dependencies
+/node_modules
