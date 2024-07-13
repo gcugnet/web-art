@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    font-size: 16px;
+}
+
 body {
     background-color: black;
     display: flex;
@@ -5,26 +10,27 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0px;
 }
 
 .filter {
     background-color: rgba(100, 100, 100, 0.3);
     position: absolute;
-    width: 50em;
-    height: 34.2em;
+    width: 50rem;
+    height: 34.2rem;
     z-index: 1;
+    border-radius: 0.3rem;
 }
 
 img {
-    width: 50em;
+    width: 50rem;
     z-index: -1;
+    border-radius: 0.3rem;
 }
 
 button {
-    margin: 2em;
-    width: 10em;
-    height: 2em;
+    margin: 2rem;
+    width: 10rem;
+    height: 2rem;
     background-color: rgba(200, 200, 200, 1);
 }
 
