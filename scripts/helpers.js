@@ -30,3 +30,36 @@ export function extractColorValues(strColor) {
 
   return [r, g, b, a];
 }
+
+/**
+ * Extracts the red value from a color string like:
+ * "rgba(200, 150, 100, 0.5)".
+ * @param {string} strColor – the input color
+ * @returns {string} – the isolated red value
+ */
+export function getRedColor(strColor) {
+  const rgba = extractColorValues(strColor);
+  return rgba[0];
+}
+
+/**
+ * Extracts the green value from a color string like:
+ * "rgba(200, 150, 100, 0.5)".
+ * @param {string} strColor – the input color
+ * @returns {string} – the isolated green value
+ */
+export function getBlueColor(strColor) {
+  const rgba = extractColorValues(strColor);
+  return rgba[1];
+}
+
+/**
+ * Extracts the blue value from a color string like:
+ * "rgba(200, 150, 100, 0.5)".
+ * @param {string} strColor – the input color
+ * @returns {string} – the isolated blue value
+ */
+export function getGreenColor(strColor) {
+  const rgba = extractColorValues(strColor);
+  return rgba[2];
+}
