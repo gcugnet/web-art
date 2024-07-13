@@ -33,25 +33,25 @@ function getDynamicRandomColor(strColor) {
 }
 
 /**
- * Slightly changes the filterElement color, based on the current
- * filterElement color.
+ * Slightly changes the FILTER_ELEMENT color, based on the current
+ * FILTER_ELEMENT color.
  */
 function changeColor() {
-  const currentColor = window.getComputedStyle(filterElement).backgroundColor;
-  filterElement.style.backgroundColor = `
+  const currentColor = window.getComputedStyle(FILTER_ELEMENT).backgroundColor;
+  FILTER_ELEMENT.style.backgroundColor = `
     ${getDynamicRandomColor(currentColor)}
   `;
 }
 
 /**
- * Periodically changes the filterElement color, based on the current
- * filterElement color and a given interval.
+ * Periodically changes the FILTER_ELEMENT color, based on the current
+ * FILTER_ELEMENT color and a given interval.
  * The interval is set in milliseconds (1000 = 1sec).
  * @param {number} interval - The interval to change the color.
  */
 function changeColorByInterval(interval) {
-  buttonElement.addEventListener("click", () => {
-    buttonElement.style.display = "none";
+  BUTTON_ELEMENT.addEventListener("click", () => {
+    BUTTON_ELEMENT.style.display = "none";
     setInterval(() => {
       changeColor();
     }, interval);

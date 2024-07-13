@@ -3,7 +3,8 @@
 // -------------------------------------------------------------------------- //
 
 /** Initialize filterElement */
-const filterElement = document.querySelector(".filter");
+export const FILTER_ELEMENT = document.querySelector(".filter");
+
 
 /** Initialize buttonElement */
-const buttonElement = document.querySelector("button");
+export const BUTTON_ELEMENT = document.querySelector("button");
